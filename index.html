@@ -11,22 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- As this is a trial version, I'm using tailwind css for styling, as this is not for production use. -->
+    <!-- As this is a trial version, I'm using tailwind css CDN for styling, as this is not for production use. -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <!-- animate on scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="bg-white text-[#424153]">
     <!-- first section  -->
     <section class="max-w-[80vw] lg:max-w-[65vw] mx-auto py-16 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-2 text-[#161723]">
+      <h2
+        class="text-2xl md:text-3xl font-semibold mb-2 text-[#161723]"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <span class="md:block">What makes us different</span>
         <span class="">makes them stronger</span>
       </h2>
 
       <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
         <!-- Left Items -->
-        <div class="space-y-10 text-left lg:pr-4">
+        <div
+          class="space-y-10 text-left lg:pr-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div
             class="flex items-start md:justify-center lg:justify-start space-x-4"
           >
@@ -68,11 +79,17 @@
             src="./assets/images/hero-img.png"
             alt="Dog Food Bowl"
             class="w-64 h-64 mx-auto rounded-full shadow-md object-cover"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           />
         </div>
 
         <!-- Right Items -->
-        <div class="space-y-10 text-left lg:pl-4">
+        <div
+          class="space-y-10 text-left lg:pl-4"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div
             class="flex items-start space-x-4 md:justify-center lg:justify-start"
           >
@@ -110,7 +127,11 @@
       </div>
 
       <!-- CTA Button -->
-      <div class="mt-10 flex flex-col items-center">
+      <div
+        class="mt-10 flex flex-col items-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <!-- CTA Button -->
         <button
           class="bg-[#ee6f4b] text-white px-8 py-2 text-sm rounded-md transition-all duration-300 hover:scale-105 w-full max-w-xs"
@@ -145,13 +166,13 @@
     <!-- second section  -->
     <section class="bg-[#f8f8f8]">
       <div class="max-w-[80vw] lg:max-w-[65vw] py-16 mx-auto">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
           <!-- Left Content -->
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000">
             <h2
-              class="text-2xl md:text-3xl font-bold text-[#161723] leading-snug mb-4"
+              class="text-2xl md:text-3xl font-semibold text-[#161723] leading-snug mb-4 text-center md:text-left"
             >
-              Nutrition is the foundation for <br />
+              <span class="md:block">Nutrition is the foundation for</span>
               longer, healthier lives in dogs.
             </h2>
             <p class="mb-6 text-sm leading-relaxed">
@@ -164,7 +185,7 @@
             <div class="space-y-4 text-sm">
               <!-- Stat 1 -->
               <div class="flex items-start gap-4">
-                <p class="text-[#ee6f4b] font-bold text-xl">97%</p>
+                <p class="text-[#ee6f4b] font-semibold text-xl">97%</p>
                 <p class="">
                   Dogs choose our dog food over leading brands because of its
                   real functional ingredients and delicious flavor.
@@ -174,7 +195,7 @@
 
               <!-- Stat 2 -->
               <div class="flex items-start gap-4">
-                <p class="text-[#ee6f4b] font-bold text-xl">84%</p>
+                <p class="text-[#ee6f4b] font-semibold text-xl">84%</p>
                 <p class="">
                   Our dog food provides superior nutrition and a patented
                   probiotic for optimal nutrient absorption.
@@ -184,7 +205,7 @@
 
               <!-- Stat 3 -->
               <div class="flex items-start gap-4">
-                <p class="text-[#ee6f4b] font-bold text-xl">92%</p>
+                <p class="text-[#ee6f4b] font-semibold text-xl">92%</p>
                 <p class="">
                   Our dog food's high protein and fat digestibility contribute
                   to ideal stool quality.
@@ -203,7 +224,11 @@
           </div>
 
           <!-- Right Image -->
-          <div class="flex justify-center">
+          <div
+            class="flex justify-center"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img
               src="./assets/images/happy-dog-bites-img.png"
               alt="Happy Dog Bites"
@@ -213,5 +238,69 @@
         </div>
       </div>
     </section>
+
+    <!-- third section  -->
+    <section class="max-w-[80vw] lg:max-w-[65vw] mx-auto py-16 text-center">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-left"
+      >
+        <!-- First Row -->
+        <div
+          class="order-2 lg:order-1"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <img
+            src="./assets/images/dogs-eating-gif.gif"
+            alt="Dogs eating food"
+            class="rounded-lg w-full h-auto"
+          />
+        </div>
+
+        <div
+          class="order-1 lg:order-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 class="text-2xl lg:text-3xl font-semibold mb-4 text-[#161723]">
+            Improve overall gastrointestinal health for better nutrient
+            absorption
+          </h2>
+          <p class="">
+            Through rigorous scientific studies and consultations with
+            veterinarians, we have created a breakthrough formula exclusively
+            tailored to combat the health challenges prevalent in dogs. A
+            staggering 91% of our customers have reported significant
+            improvements in their dogs' health after incorporating our product
+            into their diet.
+          </p>
+        </div>
+
+        <!-- Second Row -->
+        <div class="order-3" data-aos="fade-down" data-aos-duration="1000">
+          <h2 class="text-2xl lg:text-3xl font-semibold mb-4 text-[#161723]">
+            Prebiotics nourish the beneficial gut bacteria, supporting digestive
+            health
+          </h2>
+          <p class="">
+            Our dog food formula contains carefully selected prebiotics that
+            work in harmony with the gut microbiota, providing the necessary
+            nutrients for the growth and maintenance of beneficial bacteria,
+            ultimately supporting digestive health.
+          </p>
+        </div>
+        <div class="order-4" data-aos="zoom-in" data-aos-duration="1000">
+          <img
+            src="./assets/images/dog-pellets.png"
+            alt="Dog food pellets"
+            class="rounded-lg w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- aos script  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/scripts/app.js"></script>
   </body>
 </html>
