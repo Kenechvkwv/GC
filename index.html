@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
+    <!-- inter tight font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- As this is a trial version, I'm using tailwind css for styling, as this is not for production use. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-white text-[#424153]">
+    <!-- first section  -->
+    <section class="max-w-[80vw] lg:max-w-[65vw] mx-auto py-16 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2 text-[#161723]">
+        <span class="md:block">What makes us different</span>
+        <span class="">makes them stronger</span>
+      </h2>
+
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+        <!-- Left Items -->
+        <div class="space-y-10 text-left lg:pr-4">
+          <div
+            class="flex items-start md:justify-center lg:justify-start space-x-4"
+          >
+            <img
+              src="./assets/icons/real-food-icon.svg"
+              alt=""
+              class="w-10 h-10"
+            />
+            <div>
+              <h3 class="font-semibold text-sm text-[#161723]">Real Food</h3>
+              <p class="text-sm text-gray-600">
+                Wholesome recipes for dogs with real meat and veggies.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start md:justify-center lg:justify-start space-x-4"
+          >
+            <img
+              src="./assets/icons/premium-ingredient-icon.svg"
+              alt=""
+              class="w-10 h-10"
+            />
+            <div>
+              <h3 class="font-semibold text-sm text-[#161723]">
+                Premium Ingredient
+              </h3>
+              <p class="text-sm text-gray-600">
+                Elevating pet care with unmatched safety and quality.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Image -->
+        <div>
+          <img
+            src="./assets/images/hero-img.png"
+            alt="Dog Food Bowl"
+            class="w-64 h-64 mx-auto rounded-full shadow-md object-cover"
+          />
+        </div>
+
+        <!-- Right Items -->
+        <div class="space-y-10 text-left lg:pl-4">
+          <div
+            class="flex items-start space-x-4 md:justify-center lg:justify-start"
+          >
+            <img
+              src="./assets/icons/made-fresh-icon.svg"
+              alt=""
+              class="w-10 h-10"
+            />
+            <div>
+              <h3 class="font-semibold text-sm text-[#161723]">Made Fresh</h3>
+              <p class="text-sm text-gray-600">
+                We prioritize maintaining the integrity of whole foods and
+                nutrition.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start space-x-4 md:justify-center lg:justify-start"
+          >
+            <img
+              src="./assets/icons/vet-developed-icon.svg"
+              alt=""
+              class="w-10 h-10"
+            />
+            <div>
+              <h3 class="font-semibold text-sm">Vet Developed</h3>
+              <p class="text-sm text-gray-600">
+                We raise the bar for dog nutrition, surpassing industry
+                expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="mt-10 flex flex-col items-center">
+        <!-- CTA Button -->
+        <button
+          class="bg-[#ee6f4b] text-white px-8 py-2 text-sm rounded-md transition-all duration-300 hover:scale-105 w-full max-w-xs"
+        >
+          Get your dog's healthy meal today!
+        </button>
+
+        <!-- Guarantee + Payment wrapper -->
+        <div
+          class="mt-3 w-full max-w-xs flex flex-col sm:flex-row sm:justify-between items-center gap-3 text-xs"
+        >
+          <!-- Guarantee -->
+          <div class="flex items-center gap-1">
+            <img
+              src="./assets/icons/guarantee-icon.svg"
+              alt=""
+              class="h-4 w-4"
+            />
+            <span>30-day money back guarantee</span>
+          </div>
+
+          <!-- Payment image -->
+          <img
+            src="./assets/images/payments.png"
+            alt="Payment methods"
+            class="w-32"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- second section  -->
+    <section class="bg-[#f8f8f8]">
+      <div class="max-w-[80vw] lg:max-w-[65vw] py-16 mx-auto">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <!-- Left Content -->
+          <div>
+            <h2
+              class="text-2xl md:text-3xl font-bold text-[#161723] leading-snug mb-4"
+            >
+              Nutrition is the foundation for <br />
+              longer, healthier lives in dogs.
+            </h2>
+            <p class="mb-6 text-sm leading-relaxed">
+              Invest in your dog's future with our scientifically formulated
+              superfood-powered supplements. Give them the nutrition they
+              deserve and watch them thrive with vitality, energy, and the joy
+              of a longer, healthier life.
+            </p>
+
+            <div class="space-y-4 text-sm">
+              <!-- Stat 1 -->
+              <div class="flex items-start gap-4">
+                <p class="text-[#ee6f4b] font-bold text-xl">97%</p>
+                <p class="">
+                  Dogs choose our dog food over leading brands because of its
+                  real functional ingredients and delicious flavor.
+                </p>
+              </div>
+              <hr class="border-gray-200" />
+
+              <!-- Stat 2 -->
+              <div class="flex items-start gap-4">
+                <p class="text-[#ee6f4b] font-bold text-xl">84%</p>
+                <p class="">
+                  Our dog food provides superior nutrition and a patented
+                  probiotic for optimal nutrient absorption.
+                </p>
+              </div>
+              <hr class="border-gray-200" />
+
+              <!-- Stat 3 -->
+              <div class="flex items-start gap-4">
+                <p class="text-[#ee6f4b] font-bold text-xl">92%</p>
+                <p class="">
+                  Our dog food's high protein and fat digestibility contribute
+                  to ideal stool quality.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-6">
+              <button
+                class="bg-[#ee6f4b] text-white px-8 py-2 rounded-md text-sm hover:scale-105 transition-all duration-300"
+              >
+                Give your furry friend the gift of wholesome nutrition
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="flex justify-center">
+            <img
+              src="./assets/images/happy-dog-bites-img.png"
+              alt="Happy Dog Bites"
+              class="rounded-lg max-w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
