@@ -18,5 +18,3 @@ Custom icons and imagery for visual appeal.
 
 Clear CTAs and persuasive copy content for product highlights.
 
-🔗 Live Preview
-👉 <a href="https://kenechvkwv.github.io/GC"> View Live Version</a>
